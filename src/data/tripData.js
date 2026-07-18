@@ -24,57 +24,86 @@ export const tripData = {
         { id: 'apps-mapsme', title: 'Instalar MAPS.ME', done: false, priority: 'low' },
         { id: 'revolut', title: 'Revisar Revolut/N26 (comisiones viajero)', done: false, priority: 'high' },
         { id: 'bateria-externa', title: 'Comprar batería externa potente', done: false, priority: 'high' },
-        { id: 'adaptadores', title: 'Verificar enchufe (tipo F europeo, 220V)', done: false, priority: 'medium' },
-      ]
-    },
-    reservas: {
-      title: '🎟️ Reservas imprescindibles',
-      icon: '📅',
-      tasks: [
-        { id: 'res-parlamento', title: 'Parlamento Budapest (4-6 semanas antes)', done: false, priority: 'high', deadline: 'Urgente', link: 'https://www.jegymester.hu/parlament' },
-        { id: 'res-schonbrunn', title: 'Palacio Schönbrunn Viena (2-3 semanas antes)', done: false, priority: 'high', deadline: '2-3 semanas', link: 'https://www.schoenbrunn.at' },
-        { id: 'res-crucero', title: 'Crucero nocturno Danubio Budapest (10-15 días antes)', done: false, priority: 'high', deadline: '10-15 días', link: '' },
-        { id: 'res-szechenyi', title: 'Balneario Széchenyi Budapest (si agosto)', done: false, priority: 'medium', deadline: 'Flexible', link: 'https://www.szechenyibath.hu' },
-        { id: 'res-restaurantes', title: 'Restaurantes populares (2 semanas antes)', done: false, priority: 'medium', deadline: '2 semanas', link: '' },
-      ]
-    },
-    packing: {
-      title: '🎒 Qué empacar',
-      icon: '🧳',
-      tasks: [
-        { id: 'pack-ropa', title: 'Ropa: 1 maleta mediana + mochila diaria', done: false, priority: 'high' },
-        { id: 'pack-gafas', title: 'Gafas de sol', done: false, priority: 'high' },
-        { id: 'pack-protector', title: 'Protector solar (28-35°C por la tarde)', done: false, priority: 'high' },
-        { id: 'pack-gorra', title: 'Gorra o sombrero', done: false, priority: 'high' },
-        { id: 'pack-paraguas', title: 'Paraguas plegable (posibles tormentas)', done: false, priority: 'high' },
-        { id: 'pack-chubasquero', title: 'Chubasquero ligero', done: false, priority: 'high' },
-        { id: 'pack-botella', title: 'Botella reutilizable (agua del grifo OK)', done: false, priority: 'medium' },
-        { id: 'pack-panuelos', title: 'Pañuelos', done: false, priority: 'low' },
-        { id: 'pack-cargador', title: 'Cargadores (enchufe tipo F)', done: false, priority: 'high' },
-      ]
-    },
-    dinero: {
-      title: '💰 Dinero y tarjetas',
-      icon: '💳',
-      tasks: [
+        { id: 'pack-ropa', title: 'Empacar: maleta mediana + mochila diaria', done: false, priority: 'high' },
+        { id: 'pack-accesorios', title: 'Empacar: gafas, protector solar, gorra, paraguas, chubasquero', done: false, priority: 'high' },
         { id: 'money-czk', title: 'Sacar 2.000 CZK (~80€) para Praga + Krumlov', done: false, priority: 'high' },
         { id: 'money-huf', title: 'Sacar 20.000 HUF (~50€) para Budapest', done: false, priority: 'high' },
-        { id: 'money-no-change', title: '❌ NO cambiar en: Plaza Ciudad Vieja, Puente Carlos, Plaza Wenceslao', done: false, priority: 'high' },
-        { id: 'money-banks', title: '✅ Usar cajeros de bancos reconocidos (Česká Spořitelna, ČSOB, Erste, Raiffeisen)', done: false, priority: 'medium' },
-        { id: 'money-respuesta', title: 'IMPORTANTE: Al pagar con tarjeta, SIEMPRE decir NO al pago en euros', done: false, priority: 'high' },
+        { id: 'res-parlamento', title: '🎟️ RESERVAR: Parlamento Budapest (4-6 semanas antes)', done: false, priority: 'high', link: 'https://www.jegymester.hu/parlament' },
+        { id: 'res-schonbrunn', title: '🎟️ RESERVAR: Palacio Schönbrunn Viena (2-3 semanas antes)', done: false, priority: 'high', link: 'https://www.schoenbrunn.at' },
+        { id: 'res-crucero', title: '🎟️ RESERVAR: Crucero nocturno Danubio Budapest (10-15 días antes)', done: false, priority: 'high' },
       ]
     },
-    daily: {
-      title: '📅 Checklist diario',
-      icon: '☀️',
+    praga: {
+      title: '🇨🇿 Praga',
+      icon: '🏰',
       tasks: [
-        { id: 'daily-agua', title: '💧 Llevar agua', done: false, priority: 'high' },
-        { id: 'daily-bateria', title: '🔋 Llevar batería externa', done: false, priority: 'high' },
-        { id: 'daily-gafas', title: '😎 Llevar gafas de sol', done: false, priority: 'high' },
-        { id: 'daily-protector', title: '☀️ Protector solar aplicado', done: false, priority: 'high' },
-        { id: 'daily-dinero', title: '💵 Llevar efectivo + tarjeta', done: false, priority: 'high' },
-        { id: 'daily-doc', title: '📄 Llevar documentación', done: false, priority: 'high' },
-        { id: 'daily-paraguas', title: '☔ Llevar paraguas pequeño', done: false, priority: 'medium' },
+        { id: 'praga-castillo', title: 'Castillo de Praga', done: false, priority: 'high', note: 'Entrada: online recomienda para evitar colas' },
+        { id: 'praga-reloj', title: 'Reloj Astronómico (Plaza de la Ciudad Vieja)', done: false, priority: 'high', note: 'Ver en hora punta' },
+        { id: 'praga-puente', title: 'Puente de Carlos', done: false, priority: 'high', note: 'Cruzar al atardecer' },
+        { id: 'praga-plaza-vieja', title: 'Plaza de la Ciudad Vieja', done: false, priority: 'high', note: 'Centro histórico' },
+        { id: 'praga-iglesia-nicolas', title: 'Iglesia de San Nicolás', done: false, priority: 'medium', note: 'Concierto Mozart/Vivaldi' },
+        { id: 'praga-torre-puente', title: 'Torre del Puente de Carlos', done: false, priority: 'medium' },
+        { id: 'praga-catedral', title: 'Catedral de San Vito', done: false, priority: 'medium' },
+        { id: 'praga-juderia', title: 'Barrio Judío (Josefov)', done: false, priority: 'medium' },
+        { id: 'praga-mercado', title: 'Mercados locales', done: false, priority: 'low', note: 'Lejos de centro turístico' },
+        { id: 'praga-restaurante', title: '🍽️ Restaurante: Lokál Dlouhááá o U Kroka', done: false, priority: 'medium', note: 'Reservar si fin de semana' },
+      ]
+    },
+    krumlov: {
+      title: '🇨🇿 Český Krumlov',
+      icon: '🏯',
+      tasks: [
+        { id: 'krumlov-castillo', title: 'Torre del Castillo de Český Krumlov', done: false, priority: 'high', note: 'Vistas de Praga desde la torre' },
+        { id: 'krumlov-paseo-noche', title: 'Pasear de noche por el pueblo', done: false, priority: 'high', note: 'Uno de los momentos del viaje que recordarás' },
+        { id: 'krumlov-plaza', title: 'Plaza Svornosti (centro medieval)', done: false, priority: 'high' },
+        { id: 'krumlov-rio', title: 'Paseo junto al río Vltava', done: false, priority: 'medium' },
+        { id: 'krumlov-iglesia', title: 'Iglesia de San Jacobo', done: false, priority: 'medium' },
+        { id: 'krumlov-museos', title: 'Museos locales (arte, historia)', done: false, priority: 'low' },
+        { id: 'krumlov-restaurante', title: '🍽️ Restaurante: Krcma Šatlava', done: false, priority: 'medium', note: 'Cocina local checa' },
+        { id: 'krumlov-trdelnik', title: 'Probar trdelník (pastel tradicional)', done: false, priority: 'low' },
+      ]
+    },
+    viena: {
+      title: '🇦🇹 Viena',
+      icon: '🎼',
+      tasks: [
+        { id: 'viena-schonbrunn', title: 'Palacio de Schönbrunn ⭐ RESERVADO', done: false, priority: 'high', link: 'https://www.schoenbrunn.at', note: 'Parques, fuentes, espectáculo' },
+        { id: 'viena-parlamento', title: 'Parlamento de Austria', done: false, priority: 'high' },
+        { id: 'viena-hofburg', title: 'Palacio Hofburg (residencia imperial)', done: false, priority: 'high' },
+        { id: 'viena-stephansdom', title: 'Catedral de San Esteban (Stephansdom)', done: false, priority: 'high' },
+        { id: 'viena-opera', title: 'Ópera estatal de Viena', done: false, priority: 'medium', note: 'Visita guiada o asistir a función' },
+        { id: 'viena-concierto', title: '🎵 Concierto música clásica', done: false, priority: 'medium', note: 'Iglesias históricas o salas especializadas' },
+        { id: 'viena-museo-historia', title: 'Museos de Historia del Arte', done: false, priority: 'medium' },
+        { id: 'viena-equitacion', title: 'Escuela Española de Equitación (Lipizzanos)', done: false, priority: 'low', note: 'Si te interesa la equitación' },
+        { id: 'viena-danubio', title: 'Paseo junto al Danubio', done: false, priority: 'medium' },
+        { id: 'viena-mercado', title: 'Naschmarkt (mercado tradicional)', done: false, priority: 'medium' },
+        { id: 'viena-cafe-central', title: '☕ Café Central (histórico)', done: false, priority: 'high', note: 'Reservar para evitar esperas' },
+        { id: 'viena-restaurante-schnitzel', title: '🍽️ Figlmüller o Plachutta (schnitzel vienés)', done: false, priority: 'medium', note: 'Reservar' },
+        { id: 'viena-excursion-wachau', title: 'Excursión: Valle de Wachau + Abadía de Melk', done: false, priority: 'medium' },
+        { id: 'viena-excursion-bratislava', title: 'Excursión: Bratislava (Eslovaquia)', done: false, priority: 'low' },
+      ]
+    },
+    budapest: {
+      title: '🇭🇺 Budapest',
+      icon: '💎',
+      tasks: [
+        { id: 'budapest-parlamento', title: 'Parlamento de Budapest ⭐ RESERVADO', done: false, priority: 'high', link: 'https://www.jegymester.hu/parlament', note: '45-50 min, reservar mañana' },
+        { id: 'budapest-crucero-danubio', title: 'Crucero nocturno Danubio ⭐ RESERVADO', done: false, priority: 'high', note: 'Atardecer - Parlamento iluminado' },
+        { id: 'budapest-bastion', title: 'Bastión de los Pescadores', done: false, priority: 'high', note: 'Vistas del Danubio y Parlamento' },
+        { id: 'budapest-basílica-esteban', title: 'Basílica de San Esteban', done: false, priority: 'high', note: 'Subir a la cúpula' },
+        { id: 'budapest-castillo-buda', title: 'Castillo de Buda', done: false, priority: 'high', note: 'Zona antigua en Buda' },
+        { id: 'budapest-termas-szechenyi', title: 'Balneario Széchenyi ⭐ RESERVAR (agosto)', done: false, priority: 'high', link: 'https://www.szechenyibath.hu', note: 'Aguas termales, piscinas' },
+        { id: 'budapest-metro-m1', title: 'Metro M1 (viaje obligatorio)', done: false, priority: 'high', note: 'Segundo metro más antiguo de Europa' },
+        { id: 'budapest-tranvia-2', title: 'Tranvía 2 (crucero en tierra)', done: false, priority: 'high', note: 'Recorre Danubio - mejores vistas' },
+        { id: 'budapest-ruin-bars', title: 'Ruin Bars: Szimpla Kert', done: false, priority: 'medium', note: 'Antes de 20:00 para tranquilidad' },
+        { id: 'budapest-mercado-central', title: 'Mercado Central (Nagyvásárcsarnok)', done: false, priority: 'medium', note: '⚠️ Cuidado con carteristas' },
+        { id: 'budapest-gran-sinagoga', title: 'Gran Sinagoga de Budapest', done: false, priority: 'medium' },
+        { id: 'budapest-iglesia-matias', title: 'Iglesia de Matías (Buda)', done: false, priority: 'medium' },
+        { id: 'budapest-restaurante-hungarikum', title: '🍽️ Hungarikum Bisztró (goulash)', done: false, priority: 'medium', note: 'Reservar' },
+        { id: 'budapest-restaurante-rosenstein', title: '🍽️ Rosenstein', done: false, priority: 'medium', note: 'Cocina húngara auténtica' },
+        { id: 'budapest-desayuno-ny-cafe', title: '☕ New York Café (desayuno)', done: false, priority: 'medium', note: 'Turístico pero vale la pena' },
+        { id: 'budapest-paprika', title: 'Probar: Paprikás csirke, lángos, dobos torta', done: false, priority: 'medium' },
+        { id: 'budapest-isla-margarita', title: 'Isla Margarita (naturaleza + balnearios)', done: false, priority: 'low' },
       ]
     }
   },
@@ -86,5 +115,8 @@ export const tripData = {
     '🍺 Ruin Bars Budapest: visitar Szimpla Kert antes de las 20:00',
     '🌙 Crucero Danubio al atardecer: Parlamento iluminado es espectacular',
     '💰 Moneda local siempre: NO pagar en euros aunque os lo ofrezcan',
+    '⚠️ Carteristas en: Praga (Puente Carlos, Reloj, Tranvías) y Budapest (Metro M1, Mercado, Parlamento)',
+    '💧 Agua del grifo OK en todos los países - llevar botella reutilizable',
+    '5️⃣ Momentos memorables: Krumlov noche 🥇 | Parlamento Budapest iluminado 🥈 | Puente Carlos atardecer 🥉 | Café histórico Viena 🏅 | Torre Krumlov 🏅',
   ]
 }
