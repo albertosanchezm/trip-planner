@@ -6,6 +6,23 @@ import SectionTabs from '@/components/SectionTabs';
 import TaskList from '@/components/TaskList';
 import Stats from '@/components/Stats';
 
+const mergeSavedSections = (savedSections) =>
+  Object.fromEntries(
+    Object.entries(tripData.sections).map(([sectionId, latestSection]) => {
+      const savedTasks = new Map((savedSections?.[sectionId]?.tasks || []).map(task => [task.id, task]));
+      return [
+        sectionId,
+        {
+          ...latestSection,
+          tasks: latestSection.tasks.map(task => ({
+            ...task,
+            done: savedTasks.get(task.id)?.done ?? task.done,
+          })),
+        },
+      ];
+    })
+  );
+
 export default function Home() {
   const [sections, setSections] = useState(tripData.sections);
   const [activeSection, setActiveSection] = useState('before');
@@ -17,7 +34,7 @@ export default function Home() {
     const saved = localStorage.getItem('tripPlanner');
     if (saved) {
       try {
-        setSections(JSON.parse(saved));
+        setSections(mergeSavedSections(JSON.parse(saved)));
       } catch (e) {
         console.error('Error cargando datos:', e);
       }

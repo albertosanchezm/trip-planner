@@ -107,7 +107,22 @@ export default function TaskList({ tasks, onToggle, onDelete, sectionId }) {
                         📅 {task.deadline}
                       </span>
                     )}
+                    {task.schedule && (
+                      <span className="text-xs bg-white/50 px-2 py-0.5 rounded">
+                        🗓️ {task.schedule}
+                      </span>
+                    )}
+                    {task.transport && (
+                      <span className="text-xs bg-white/50 px-2 py-0.5 rounded">
+                        🚆 {task.transport}
+                      </span>
+                    )}
                   </div>
+                  {task.note && (
+                    <p className="text-xs text-gray-600 mt-2 leading-relaxed">
+                      {task.note}
+                    </p>
+                  )}
                   {task.link && (
                     <a
                       href={task.link}
